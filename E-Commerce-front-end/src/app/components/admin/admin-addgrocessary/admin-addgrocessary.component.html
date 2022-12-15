@@ -1,0 +1,43 @@
+
+<h1>Add Grocessary</h1>
+
+<table >
+    <tr>
+        <td>Product Name</td>
+        <td>
+            <input type="text" [(ngModel)]="productname" />
+        </td>
+    </tr>
+    <tr>
+        <td>Image</td>
+        <td>
+            <input type="text" [(ngModel)]="image"/>
+        </td>
+    </tr>
+    <tr>
+        <td>Description</td>
+        <td>
+            <input type="text" [(ngModel)]="description"/>
+        </td>
+    </tr>
+    <tr>
+        <td>Mrp Price</td>
+        <td>
+            <input type="number" [(ngModel)]="mrpPrice"/>
+        </td>
+    </tr>
+    <tr>
+        <td>Quantity</td>
+        <td>
+            <input type="number" [(ngModel)]="quantity"/>
+        </td>
+    </tr>
+    
+    
+    <tr>
+        <td colspan="2">
+            <button (click)="onAddProduct()">{{ isEdit ? 'Update' : 'Add Product'}}</button>
+        </td>
+    </tr>
+</table>
+
